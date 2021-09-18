@@ -1,11 +1,12 @@
 import { Fragment } from 'react'
-import { Hero, CoupleProfile } from '#components/index/index'
+import { Hero, CoupleProfile, SaveTheDate } from '#components/index/index'
 
 const IndexService = (): JSX.Element => {
   return (
     <Fragment>
       <Hero />
       <CoupleProfile />
+      <SaveTheDate />
     </Fragment>
   )
 }
