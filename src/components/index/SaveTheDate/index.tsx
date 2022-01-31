@@ -7,8 +7,8 @@ import calculateTimeLeft, {
 const SaveTheDate = (): JSX.Element => {
   const [weddingDate] = useState<ICalculateTimeLeftProps>({
     year: 2022,
-    month: 5,
-    day: 12,
+    month: 6,
+    day: 17,
     hour: 8,
     minute: 0,
     second: 0,
@@ -37,10 +37,7 @@ const SaveTheDate = (): JSX.Element => {
         alt="save-the-date--bg"
       />
       <div className="content">
-        <h1 className="title">Save The Date</h1>
-        <h2>
-          on June, 12<sup>th</sup> 2022 at 08:00 WIB
-        </h2>
+        <h1 className="title">Menuju Pernikahan</h1>
         <div className="left-time">
           <div className="section">
             <h3 className="value">{leftTime.days}</h3>

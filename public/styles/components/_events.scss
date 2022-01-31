@@ -1,0 +1,81 @@
+.events {
+  position: relative;
+  height: calc(100vh - 4em);
+  background-color: #967450;
+  color: #fafafa;
+  padding: 2em;
+  @media only screen and (max-width: 720px) {
+    height: 100%;
+  }
+  .content {
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+    .title {
+      font-size: 35px;
+      text-align: center;
+      font-weight: 400;
+    }
+    .description {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @media only screen and (max-width: 720px) {
+        flex-direction: column;
+      }
+    }
+    .flex {
+      display: flex;
+      &.direction-column {
+        flex-direction: column;
+      }
+      &.direction-row {
+        flex-direction: row;
+      }
+    }
+    .section {
+      margin: 2em 0;
+      .title-section {
+        .event-title {
+          font-family: 'Satisfy', cursive;
+          font-weight: bold;
+          font-size: 28px;
+          margin-bottom: 0.25em;
+        }
+        .day {
+          font-size: 18px;
+        }
+        .date-month-year {
+          justify-content: center;
+          align-items: center;
+          .date {
+            font-size: 63px;
+            margin: 0 0.25em;
+          }
+          .month {
+            font-size: 18px;
+          }
+          .year {
+            font-size: 18px;
+          }
+        }
+        .time {
+          font-size: 21px;
+        }
+      }
+    }
+    .place {
+      margin-top: 2.5em;
+      h3 {
+        font-weight: bold;
+        margin: 1em 0;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
